@@ -1,0 +1,66 @@
+CREATE TABLE USER_SN(
+user_id         SERIAL,
+user_name   	varchar(40) CONSTRAINT firstkey PRIMARY KEY ,
+user_pass	varchar(40),
+user_gender   	varchar(10) not null,
+user_birthday   date,
+user_phone   	varchar(20),
+user_email_id   varchar(40) not null,
+user_country    varchar(40),
+user_profile_pic   	varchar(80),
+user_register_date	date,
+user_last_login		date,
+user_staus		varchar(40),
+user_posts		varchar(80)
+);
+
+INSERT INTO USER_SN ("user_name", "user_pass", "user_gender", "user_birthday", "user_phone", "user_email_id", "user_country", "user_profile_pic", "user_register_date", "user_last_login", "user_staus", "user_posts") 
+            VALUES  ('Johny McCain', '123456',  'Male',        '01/21/1989', '(917)998-1010', 'johny@nyu.edu', 'India' , 'C:\Users\Johny\Pictures\photo1.jpg', '04/23/2016' , '04/23/2016',  'unverified',   'no' );
+			
+CREATE TABLE GROUP_SN(
+group_id        SERIAL PRIMARY KEY ,
+group_name   	varchar(40) ,
+group_admin		int,
+group_display_pic   	varchar(40),
+group_register_date	date,
+group_member_list	int[]
+);
+
+insert into GROUP_SN ("group_name","group_admin","group_display_pic","group_register_date","group_member_list")
+            VALUES   ('NYU SP 16',10,'default.jpg','4/24/2016','{10,11,12}');
+			
+CREATE TABLE POST_SN(
+post_id    SERIAL,
+post_creation_timestamp    timestamp,
+post_message   	varchar(50),
+post_title    varchar(50),
+user_id    int ,
+group_id   int,
+primary key(post_id));
+
+
+
+CREATE TABLE COMMENTS_SN(
+comment_id        SERIAL PRIMARY KEY ,
+post_id   	int,
+user_id     int,
+comment     varchar(100),
+date        timestamp
+);
+
+
+CREATE TABLE PHOTO_SN(
+photo_id SERIAL PRIMARY KEY,
+user_id  int,
+image_name varchar(30),
+image bytea
+);
+
+CREATE TABLE PERMISSIONS_SN(
+permission_id SERIAL PRIMARY KEY,
+user_id int,
+profile_info boolean,
+gallery boolean,
+posts boolean,
+primary key(permission_id)
+);

@@ -1,0 +1,754 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color:#F2F2F2;
+}
+
+.container {
+	margin:0;
+	padding:0;
+	background-color:#F2F2F2;
+}
+
+a:link    {color:#e6e6e6; background-color:transparent; text-decoration:none}
+a:visited {color:#e6e6e6; background-color:transparent; text-decoration:none}
+a:hover   {color:red; background-color:transparent; text-decoration:underline}
+a:active  {color:#e6e6e6; background-color:transparent; text-decoration:underline}
+
+#welcome_header{
+	font-family:Trebuchet MS;
+	color: brown;
+}
+
+
+
+#head_wrap{
+	width:100%;
+	height:40px;
+	border-bottom:2px solid brown;
+	padding:10px;
+	background-color:#551A8B;
+	font-family: Trebuchet MS;
+}
+
+#shortlogo{
+	margin-bottom:-3.2%;
+	margin-left:17%;
+	padding:5px;
+	height:50px;
+	width:100px;
+}
+
+#user_ProfilePic:active{
+	transform: scale(3,2);
+}
+
+#header{
+	margin:0 auto;
+	width: 1000px;
+	height: 35px;
+	color:white;
+	font-family: Trebuchet MS;
+	font-size:18px;
+}
+
+#menu{
+	line-height:35px;
+	padding:0;
+	margin:0;
+	float:right;
+	color: white;
+	font-size:19px;
+	margin-right: -70px;
+}
+
+#menu li{
+	display:inline;
+	list-style:none;
+	font-family: Trebuchet MS;
+	font-size: 17.5px;
+	color: orange;
+}
+
+#menu li:hover{
+	text-decoration:underline;
+}
+
+#menu a{
+	margin:5px;
+	padding:5px;
+	text-decoration:none;
+}
+
+#body{
+	font-family:Trebuchet MS;
+	height:1000px;
+	width:1000px;
+}
+
+#form1 input{
+	margin-bottom:-10px;
+	margin-left:-10px;
+	padding: 6px;
+	height:21px;
+	width:330px;
+	border-radius:2px;
+	font-size:21px;
+}
+
+#form1 button{
+	padding: 4px;
+	color: darkviolet;
+	margin-top:1px;
+	height:35px;
+	width:80px;
+	border-radius:2px;
+	font-size:17px;
+	font-family:Trebuchet MS;
+}
+
+#form1 button:hover{
+	background-color:darkviolet;
+	color: white;
+}	
+
+.content{
+	width:1000px;
+	margin:0 auto;
+}
+
+a:link    {color:orange; background-color:transparent; text-decoration:none;}
+a:visited {color:black; background-color:transparent; text-decoration:none;}
+a:hover   {color:orange; background-color:transparent; text-decoration:underline;}
+a:active  {color:black; background-color:transparent; text-decoration:underline;}
+
+#user_timeline {
+	background:#551A8B;
+	width:260x;
+	float:left;
+	height:2000px;
+}
+
+#timeline_header{
+	color: orange;
+	font-family:Trebuchet MS;
+}
+
+#user_details{
+	padding:12px;
+	margin-bottom:5px;
+	font-family:Trebuchet MS;
+	font-size: 17px;
+}
+
+#user_details a{
+	color: brown;
+	font-size:17px;
+}
+
+#user_details a:hover{
+	text-decoration:underline;
+}
+
+#user_details img {
+	border-radius:10px;
+}
+
+#user_details p {
+	margin-bottom:10px;
+	padding:3px;
+}
+
+#user_mention{
+	background:#E6E6FA;
+	height: 350px;
+		
+}
+
+#content_timeline {
+	float:right;
+	width:750px;
+	padding:2px;
+	font-family:Trebuchet MS;
+}
+
+#f input{
+	padding:8px;
+	border:1px solid grey;
+	border-radius:5px;	
+	width:800px;
+	height:30px;
+	font-size:17px;
+	font-family: Trebuchet MS;
+	background-color:white;
+}
+#f input:hover{
+	background-color:#FFF8DD;	
+}
+
+#f textarea {
+	padding:8px;
+	border:1px solid grey;
+	border-radius:5px;
+	width:800px;
+	height:100px;
+	font-size:16px;
+	font-family: Trebuchet MS;
+}
+
+#f textarea:hover{
+	background-color:#FFF8DD;
+}
+
+#f select {
+	padding:8px;
+	border:1px solid grey;
+	border-radius:5px;
+	
+}
+#f select:hover{
+	background-color:#FFF8DD;
+}
+#f button{
+	padding:8px;
+	width:170px;
+	height:40px;
+	font-size:18.5px;
+	font-family:Trebuchet MS;
+	border-radius:5px;
+	border: 1px solid grey;
+	color: darkviolet;
+	background-color:#F2F2F2;
+}
+
+#f button:hover{
+	color:white;
+	background-color:darkviolet;
+}
+
+#f1 input{
+	padding:8px;
+	border:1px solid grey;
+	border-radius:5px;	
+	width:325px;
+	height:30px;
+	font-size:17px;
+	font-family: Trebuchet MS;
+}
+#f1 input:hover{
+	background-color:#FFF8DD;	
+}
+
+#f1 textarea {
+	padding:8px;
+	border:1px solid grey;
+	border-radius:5px;
+	width:325px;
+	height:30px;
+	font-size:17px;
+	font-family: Trebuchet MS;
+	text-overflow:string;
+}
+
+#f1 textarea:hover{
+	background-color:darkviolet;
+}
+
+#f1 select {
+	padding:8px;
+	width:341px;
+	height:45px;
+	font-size:17px;
+	border:1px solid grey;
+	border-radius:5px;
+}
+#f1 select:hover{
+	background-color:#FFF8DD;
+}
+#f1 button{
+	padding:9px;
+	width:130px;
+	height:45px;
+	font-family:Trebuchet MS;
+	border: 1px solid grey;
+	font-size:17px;
+	border-radius:5px;
+	color: darkviolet;
+	background-color:#F2F2F2;
+}
+
+#f1 button:hover{
+	color:white;
+	background-color:darkviolet;
+}
+
+#post_header{
+	font-family:Trebuchet MS;
+	color: #DC143C;
+}
+
+#posts {
+	width:820px;
+	padding-top:10px;
+	padding-bottom:15px;
+	line-height:30px;
+	background-color:white;
+	font-family:Trebuchet MS;
+}
+
+#posts i{
+	color:#9370DB;
+	font-size:14px;
+	font-family:Trebuchet MS;
+}
+
+#posts img {
+	float:left;
+	padding-top:5px;
+	padding-right:8px;
+}
+
+#posts button{
+	font-size:15.5px;
+	padding:6px;
+	height:23x;
+	width:140px;
+	border-radius:7px;
+	color: darkviolet;
+	background-color:#F2F2F2;
+	border:1px solid grey;
+}
+
+#posts1_button{
+	font-size:15px;
+	padding:5px;
+	height:20x;
+	width:90px;
+	border-radius:1px;
+	color: darkviolet;
+	background-color:#F2F2F2;
+	border:1px solid grey;
+}
+
+#posts button:hover{
+	background:darkviolet;
+	color:white;
+}
+
+#postedWallImage{
+	margin-left:10cm;
+	margin-top:-250px;
+	padding:4px;
+	height:270px;
+	width:400px;	
+	border: 1px solid grey;
+	border-radius:5px;
+}
+
+#postedWallImage:active{
+	 transform: scale(2,2); 
+}
+
+#posts_withImage {
+	width:820px;
+	height:350px;
+	background-color:white;
+	font-family:Trebuchet MS;
+}
+
+#posts_withImage i{
+	color:#9370DB;
+	font-size:14px;
+	font-family:Trebuchet MS;
+}
+
+#posts_withImage img {
+	float:left;
+	padding-top:5px;
+	padding-right:8px;
+}
+
+#posts_withImage button{
+	font-size:15.5px;
+	padding:6px;
+	height:23x;
+	width:140px;
+	border-radius:7px;
+	color: darkviolet;
+	background-color:#F2F2F2;
+	border:1px solid grey;;
+}
+
+#posts_withImage button:hover{
+	background:darkviolet;
+	color:white;
+}
+
+#editPosts{
+	width:820px;
+	height:320px;
+	background-color:white;
+	font-family:Trebuchet MS;
+}
+
+#editPosts input{
+	width:375px;
+	height:40px;
+	margin-bottom:-1cm;
+	background-color:white;
+	border: 1px solid grey;
+	border-radius: 5px;
+	font-size: 15px;
+	font-family:Trebuchet MS;
+}
+
+#editPosts textarea{
+	width:370px;
+	height:150px;
+	background-color:white;
+	border: 1px solid grey;
+	border-radius: 5px;
+	font-size: 15px;
+	font-family:Trebuchet MS;
+}
+
+#editPosts textarea:hover{
+background-color:#FFF8DD;
+}
+
+#editPosts input:hover{
+	background-color:#FFF8DD;
+}
+
+#editPosts img{
+	margin-left:10.5cm;
+	margin-top:-240px;
+	padding:4px;
+	height:270px;
+	width:400px;	
+	border: 1px solid grey;
+	border-radius:5px;
+}
+
+#editPosts p{
+	margin-left:10.5cm;
+	margin-top:-240px;
+	padding:4px;
+	height:270px;
+	width:400px;	
+	color: grey;
+	border: 1px dotted grey;
+	border-radius:5px;
+}
+
+#editPosts img:active{
+transform: scale(2,2);
+}
+
+#editPostButton {
+	padding:5px;
+	border:1px solid grey;
+	border-radius:4px;
+	width:110px;
+	height:32px;
+	font-family: Trebuchet MS;
+	font-size:16px;
+	color: darkviolet;
+	background-color:#F2F2F2;
+}
+
+#editPostButton:hover{
+	background:darkviolet;
+	color:white;
+}
+
+#friendRequestSentButton:disabled{
+	padding:5px;
+	border-radius:4px;
+	width:160px;
+	height:32px;
+	font-family: Trebuchet MS;
+	font-size:16px;
+	color: white;
+	background-color:darkviolet;
+}
+
+#friendRequestAcceptButton {
+	padding:5px;
+	border-radius:4px;
+	border: 1px solid grey;
+	width:150px;
+	height:35px;
+	font-family: Trebuchet MS;
+	font-size:16px;
+	color: darkviolet;
+	background-color:#F2F2F2;
+}
+
+#friendRequestAcceptButton:hover{
+	background:darkviolet;
+	color:white;
+}
+
+#toggleButton_Timeline{
+	padding:7px;
+	border-radius:4px;
+	border: 1px solid grey;
+	width:280px;
+	height:55px;
+	font-family: Trebuchet MS;
+	font-size:19px;
+	color: #A04000;
+	background-color:#F6DDCC;
+}
+
+
+#toggleButton_Timeline:hover{
+	background:darkviolet;
+	color:white;
+}
+
+#toggleButton_Timeline:focus{
+	background:darkviolet;
+	color:white;
+}
+
+#toggleButton_Gallery{
+	padding:7px;
+	border-radius:4px;
+	border: 1px solid grey;
+	width:280px;
+	height:55px;
+	font-family: Trebuchet MS;
+	font-size:19px;
+	color: #A04000;
+	background-color:#F6DDCC;
+}
+
+
+#toggleButton_Gallery:hover{
+	background:darkviolet;
+	color:white;
+}
+
+#toggleButton_Gallery:focus{
+	background:darkviolet;
+	color:white;
+}
+
+#frnd_Info{
+	font-family:Trebuchet MS;
+	color: darkviolet;
+	font-size: 19px;
+}
+
+#frnd_Info input{
+
+	font-family:Trebuchet MS;
+	font-size:18px;
+	border: 1px solid grey;
+	border-radius:5px;
+	height: 35px;
+	width: 300px;
+}
+
+#pagination {
+	margin-top:20px;
+}
+
+#pagination a{
+	color:blue;
+	text-decoration:none;
+}
+
+#pagination a:hover{
+	color:red;
+	font-weight:bold;
+}
+
+#reply textarea {
+	padding:8px;
+	border:1px solid grey;
+	border-radius:5px;
+	width:500px;
+	height:60px;
+	font-family: Trebuchet MS;
+}
+
+#reply textarea:hover{
+	background:#F5F5DC;
+}
+
+#reply button {
+	padding:5px;
+	border:1px solid grey;
+	border-radius:4px;
+	width:110px;
+	height:32px;
+	font-family: Trebuchet MS;
+	font-size:16px;
+	color: darkviolet;
+	background-color:#F2F2F2;
+}
+
+#reply button:hover{
+	background:darkviolet;
+	color:white;
+}
+
+#comment_reply{
+	font-family: Trebuchet MS;
+	color: darkviolet;
+}
+
+#comments{
+	background:#F5F5DC;
+	padding:4px;
+	width: 800px;
+	border-radius:3px;
+	font-family:Trebuchet MS;
+	font-size:15px;
+}
+
+#comments h5{
+	font-size:16px;
+	color:#FF6347;
+	font-family:Trebuchet MS;
+}
+
+#comments span{
+	color:#9370DB;
+	font-size:15px;
+	font-family:Trebuchet MS;
+}
+
+#searchcount_css{
+	color:brown;
+	/*color:darkviolet;*/
+}
+
+
+#showImage{
+	border:2px solid darkviolet;
+	height:180px;
+	width:210px;
+	font-size: 14px;
+	font-family: Trebuchet MS;
+}
+
+#showImage:active{
+	 transform: scale(4,3); 
+}
+
+#showImage_header{
+	 color:orange; 
+	 font-family: Trebuchet MS;
+}
+
+#gallery_header{
+	color: darkviolet;
+	font-family:Trebuchet MS;
+}
+
+#gallery_form button{
+	padding:5px;
+	width:130px;
+	height:40px;
+	font-size:18px;
+	font-family:Trebuchet MS;
+	border: 1px solid grey;
+	border-radius:3px;
+	color: darkviolet;
+	background-color:#F2F2F2;
+}
+
+#gallery_form input{
+	width:300px;
+	height:25px;
+	padding:7px;
+	font-size:17px;
+	font-family:Trebuchet MS;
+	border: 1px solid grey;
+	border-radius:3px;
+	background-color:white;
+}
+
+#gallery_form input:hover{
+	background-color:#FFF8DD;
+}
+
+#gallery_form button:hover{
+	color:white;
+	background-color:darkviolet;
+}
+
+#gallery_form label{
+	font-size:19px;
+}
+
+#user_profile{
+	background: #FCDFFF;
+	width: 900px;
+	border-radius:15px;
+	margin-left:-5px;
+	margin-top: -10px;
+}
+
+#user_profile_image{
+	margin-left:10px;
+	margin-bottom:-180px;
+}
+
+#user_profile_details1{
+	font-size:17px;
+	font-family:Trebuchet MS;
+	margin-left:6cm;
+	margin-bottom:-90px;
+	
+}
+
+#footer{
+	width:100%;
+	height:30px;
+	padding:2px;
+	border-top:5px solid brown;
+	background:indigo;
+	font-size: 15px;
+	font-family: Trebuchet MS;
+	clear:both;
+}
+
+#footer h2{
+	text-align:center;
+	padding-top:2px;
+	font-family: Trebuchet MS;
+	font-size: 15px;
+	color:white;
+}
